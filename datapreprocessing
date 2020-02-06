@@ -1,0 +1,12 @@
+Categorizing By Data
+Classifying by Type
+
+Task: Create a new support_log table and then pass it the following columns from the support table: ['user_id','type_id','request_timestamp'].
+Print the first ten support_log rows.
+
+import pandas as pd
+support = pd.read_csv('/datasets/support_upd_eng.csv')
+
+support_log=support[['user_id','type_id','request_timestamp']]
+
+print(support_log.head(10))
